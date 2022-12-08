@@ -1,0 +1,41 @@
+.papeljogador, .pedrajogador, .tesourajogador{
+    animation-name: papeljogador_anim;
+    animation-iteration-count: 1;
+    animation-duration: 10s;
+}
+
+.papel, .pedra, .tesoura{
+    animation-name: papelbatalha_anim;
+    animation-iteration-count: 1;
+    animation-duration: 6s;
+    animation-delay: 1s;
+}
+
+@keyframes papeljogador_anim {
+    
+    50%{   
+    top:30%;
+    right: 27%;
+    rotate: 0deg;
+    }
+
+    75%{
+        right:43%;
+        top: 30%;
+    }
+}
+
+@keyframes papelbatalha_anim{
+    
+    50%{   
+    top:30%;
+    left:28%;
+    }
+
+    75%{
+        left:40%;
+        top: 30%;
+    }
+}
+
+

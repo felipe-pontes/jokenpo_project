@@ -1,0 +1,109 @@
+.titulo, .gif, button{
+    display: none;
+}
+
+.cardsinimigo, .pontuacao, .cardsjogador,#joga,#jogar{
+    display: block;
+}
+
+#joga{
+    margin: 0%;
+    position: absolute;
+    left:89%;
+    color: white;
+    size:100%;
+    box-shadow: -10px 5px #0a0a0a62;
+}
+
+.pedra{
+    animation-name: pedra_anim;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+
+@keyframes pedra_anim {
+    25%{   
+    top:1%;
+    right: 45%;
+    width: 12%;
+    z-index: 2;
+    rotate: 0deg;
+    }
+    
+    50%{
+    top:2%;
+    right:40%;
+    rotate: 14deg;
+    z-index: 3;
+    animation: 1s;
+    }
+
+    75%{
+    rotate: 0deg;  
+    top:1%;
+    right: 45%;
+    width: 12%;
+    z-index: 2;  
+    }
+}
+
+.papel{
+    animation-name: papel_anim;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-delay: 3s;
+}
+
+
+@keyframes papel_anim {
+
+    25%{   
+    top: 2%;
+    right:40%;
+    rotate: 14deg;
+    z-index: 3;
+    }
+    
+    50%{
+    top: 1%;
+    rotate: 0deg;
+    right:45%;
+    z-index: 2;
+    animation: 1s;
+    }
+
+    75%{  
+        right: 50%;
+        top: 3%;
+        rotate: -15deg;
+        z-index: 1;
+    }
+}
+
+
+.tesoura{
+    animation-name: tesoura_anim;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-delay: 1.2s;
+}
+
+
+@keyframes tesoura_anim {
+ 
+
+ 25%{
+    right: 50%;
+    top: 3%;
+    rotate: -15deg;
+ }
+
+ 50%{
+    top:1%;
+    right: 45%;
+    z-index: 1;
+    width: 12%;
+    rotate: 0deg;
+ }
+
+ }

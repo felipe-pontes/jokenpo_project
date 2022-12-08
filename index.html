@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./estilo/style.css">
+</head>
+<body>
+    <div class="main">
+
+        <div  class="campo"> 
+            <div class="titulo">
+                <h1>JO-KEN-PO</h1>
+            </div>
+            <div  class="gif">
+                <img  src="./images/gon-hx-h.gif">
+                <img  src="./images/gon-hx-h.gif" id="imagem2">
+            </div>
+
+            <div class="button">
+                <button type="button" id="inicia">
+                    Play!
+                </button>
+            </div>
+        </div>
+
+        <div class="inimigo">
+            <div class="cards">
+                <div class="pedra cardsinimigo">
+                    <img src="./images/pedra.png">
+                    </div>
+                <div class="papel cardsinimigo">
+                    <img src="./images/papel.webp">
+                </div>
+    
+                <div class="tesoura cardsinimigo">
+                    <img src="./images/tesoura.jfif">
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="jogador">
+            <div class="cards">
+                <div class="pedrajogador cardsjogador" onclick="play('pedra')">
+                    <img src="./images/pedra.png">
+                    </div>
+                <div class="papeljogador cardsjogador"  onclick="play('papel')">
+                    <img src="./images/papel.webp">
+                </div>
+                
+               <div class="tesourajogador cardsjogador"  onclick="play('tesoura')">
+                    <img src="./images/tesoura.jfif">
+                </div>
+                
+        </div>
+
+    <!--script do inimigo-->
+    <script src="./js/inimigo.js"></script>
+   </body>
+</html>

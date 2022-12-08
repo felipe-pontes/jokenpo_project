@@ -1,0 +1,53 @@
+.pedrajogador{
+    animation-name: pedrajogador_anim;
+    animation-iteration-count: 1;
+    animation-duration: 10s;
+}
+
+.tesoura{
+    animation-name: tesourabatalha_anim;
+    animation-iteration-count: 1;
+    animation-duration: 7.5s;
+}
+
+@keyframes pedrajogador_anim {
+    50%{   
+    top:30%;
+    right: 27%;
+    rotate: 0deg;
+    }
+
+    75%{
+        right:43%;
+        top: 30%;
+    }
+    
+    80%{
+        z-index: 1;
+    }
+}
+
+@keyframes tesourabatalha_anim {
+    50%{   
+    left:28%;
+    top:30%;
+    rotate: 0deg;
+    }
+
+    75%{
+        left:40%;
+        top: 30%;
+    }
+    
+    80%{
+        z-index: 1;
+    }
+}
+
+.pedra{
+    animation: none;
+}
+
+.papel{
+    animation: none;
+}

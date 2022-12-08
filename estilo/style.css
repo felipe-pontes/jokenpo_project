@@ -1,0 +1,264 @@
+body{ 
+     background-image: url("../images/mainbg.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.main{
+    width: 40%;
+    margin: auto;
+    background-color: beige;
+    height: 100%;
+}
+/*placar*/
+.pontuacao{
+    display: none;
+    position: absolute;
+    width: 20%;
+    height: 15%;
+    left: -5%;
+    background-color: white;
+    border-radius: 5%;
+}
+
+.jogadorponto{
+    position:absolute;
+    top: 15%;
+    left: 30%;
+    width: 25%;
+    font-size: larger;
+    text-align: center;
+}
+
+.divider{
+    position: absolute;
+    right: 25%;
+    top: 15%;
+    width: 25%;
+    font-size: larger;
+    text-align: center;
+
+}
+
+.inimigoponto{
+    position: absolute;
+    right: 5%;
+    top: 15%;
+    width: 25%;
+    font-size: larger;
+    text-align: center;
+}
+
+/*estilo do campo*/
+.campo{
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    background-color: white;
+    width: 60%;
+    height: 50%;
+    border-radius:10% ;
+}
+
+.titulo{
+    position: absolute;
+    display: block;
+    left:40%;
+    top:0%;
+    font-size: 20px;
+}
+
+.gif img{ 
+    display: block;
+    position: absolute;
+    top:25%;
+    right:75%;
+    border-radius: 10%;
+
+}
+#imagem2{ 
+    display: block;
+    position: absolute;
+    top:25%;
+    right:5%;
+    border-radius: 10%;
+
+}
+
+.button button{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 10%;
+    height: 10%;
+    background-color: green;
+    border: white solid 1px;
+    border-radius: 10%;
+}
+
+#joga{
+    display: none;
+}
+
+/* estilo das cartas do inimigo */
+.cardsinimigo{
+    display: none;
+    position: absolute;
+}
+
+
+.pedra{
+    right: 50%;
+    top: 3%;
+    rotate: -15deg;
+    width: 12%;
+    height: 250px;
+    background-color: aqua;
+    border-radius:10% ;
+    padding: 1%;
+    box-sizing: border-box;
+    box-shadow: -15px 5px #0a0a0a62;
+
+}
+
+
+.pedra img{
+    rotate: -1deg;
+    margin: 10% ;
+    width: 80%;
+    height: 80%;
+    border-radius: 10%;
+}
+
+.papel{
+    right: 45%;
+    width: 12%;
+    height: 250px;
+    background-color: rgb(30, 255, 0);
+    border-radius:10% ;
+    padding: 1%;
+    box-sizing: border-box;
+    box-shadow: -15px 5px #0a0a0a62;
+
+}
+
+
+.papel img{
+    margin: 10% ;
+    width: 80%;
+    height: 80%;
+    border-radius: 10%;
+}
+
+
+.tesoura{
+    top: 2%;
+    right:40%;
+    rotate: 14deg;
+    width: 12%;
+    height: 250px;
+    background-color: rgb(255, 0, 0);
+    border-radius:10% ;
+    padding: 1%;
+    box-sizing: border-box;
+    box-shadow: -15px 5px #0a0a0a62;
+
+}
+
+
+.tesoura img{
+    rotate: -1deg;
+    margin: 10% ;
+    width: 80%;
+    height: 80%;
+    border-radius: 10%;
+}
+
+/*cards jogador*/
+
+.cardsjogador{
+    display: none;
+    position: absolute;
+}
+
+.cardsjogador:hover{
+    border: 5px solid gold;
+    box-shadow: none;
+    z-index: 3;
+}
+
+.pedrajogador{
+    right: 50%;
+    top: 65%;
+    rotate: -15deg;
+    width: 12%;
+    height: 250px;
+    background-color: rgb(255, 0, 64);
+    border-radius:10% ;
+    padding: 1%;
+    box-sizing: border-box;
+    box-shadow: 10px left rgba(0, 0, 0, 0.5);
+}
+
+
+.pedrajogador img{
+    rotate: -1deg;
+    margin: 10% ;
+    width: 80%;
+    height: 80%;
+    border-radius: 10%;
+}
+
+.papeljogador{
+    top: 62%;
+    right: 45%;
+    width: 12%;
+    height: 250px;
+    background-color: rgb(76, 0, 255);
+    border-radius:10% ;
+    padding: 1%;
+    box-sizing: border-box;
+    box-shadow: -15px 5px #0a0a0a62;
+
+}
+
+
+.papeljogador img{
+    margin: 10% ;
+    width: 80%;
+    height: 80%;
+    border-radius: 10%;
+}
+
+
+.tesourajogador{
+    top: 63%;
+    right:40%;
+    rotate: 14deg;
+    width: 12%;
+    height: 250px;
+    background-color: rgb(0, 255, 64);
+    border-radius:10% ;
+    padding: 1%;
+    box-sizing: border-box;
+    box-shadow: -15px 5px #0a0a0a62;
+
+}
+
+
+.tesourajogador img{
+    rotate: -1deg;
+    margin: 10% ;
+    width: 80%;
+    height: 80%;
+    border-radius: 10%;
+}
+
+#teste{position: absolute;
+    width: 500px;
+    background-color:pink ;
+    z-index: 3;
+
+}
+
+
